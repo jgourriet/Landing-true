@@ -58,6 +58,12 @@
 .service:hover i {
   color: #fff; }
 
+@media (max-width: 500px) {
+  .service {
+    width: 100%; }
+  .container-serv {
+    height: auto; } }
+
 .contact {
   display: flex;
   justify-content: space-between;
@@ -74,8 +80,7 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 105px;
-  margin: 15px; }
+  height: 105px; }
 
 .card {
   margin-top: 5px;
@@ -211,6 +216,15 @@
   background: #CD201F;
   color: #ffffff; }
 
+@media (max-width: 500px) {
+  .redes {
+    margin-left: 22px; }
+  .wrapper .icon {
+    width: 15px;
+    height: 15px; }
+  .card {
+    width: 80%; } }
+
 * {
   margin: 0;
   padding: 0; }
@@ -227,7 +241,7 @@ a {
   background-position: center;
   background-repeat: no-repeat;
   width: 100%;
-  height: 1080px; }
+  height: 100vh; }
 
 .et-hero-tabs,
 .et-slide {
@@ -319,3 +333,12 @@ a {
     font-size: 1rem; }
   .et-hero-tab {
     font-size: 1rem; } }
+
+@media (max-width: 500px) {
+  .redes {
+    margin-left: 22px; }
+  .wrapper .icon {
+    width: 15px;
+    height: 15px; }
+  .card {
+    width: 80%; } }

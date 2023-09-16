@@ -67,3 +67,12 @@
 .service:hover i {
   color: #fff;
 }
+@media (max-width: 500px) {
+ .service{
+  width: 100%;
+  
+ }
+ .container-serv{
+  height: auto;
+ }
+}
