@@ -4,7 +4,9 @@
   "description": "",
   "main": "main.js",
   "scripts": {
-    "compile-scss": "node-sass src/styles.scss css/styles.css"
+    "start": "node server.js",
+    "sass:compile": "sass src/styles.scss css/styles.css"
+
   },
   "keywords": [],
   "author": "",
