@@ -83,7 +83,7 @@ class StickyNavigation {
   // Muestra u oculta el botón de volver arriba según la posición del scroll
   window.addEventListener("scroll", function() {
     const scrollTopButton = document.getElementById("scrollTopButton");
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    if (window.scrollY > 20) {
       scrollTopButton.style.display = "block";
     } else {
       scrollTopButton.style.display = "none";
