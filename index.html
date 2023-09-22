@@ -131,14 +131,13 @@
               Formulario de contacto
             </h1>
           </div>
-          <form action="" class="form">
-            <input type="text" placeholder="Nombre completo" class="input input-50">
-            <input type="email" placeholder="Correo electrónico" class="input input-50">
-            <input type="text" placeholder="Asunto" class="input">
-            <textarea placeholder="Mensaje" class="input">
-    </textarea>
+          <form action="procesar_formulario.php" method="post" class="form">
+            <input type="text" name="nombre" placeholder="Nombre completo" class="input input-50">
+            <input type="email" name="email" placeholder="Correo electrónico" class="input input-50">
+            <input type="text" name="asunto" placeholder="Asunto" class="input">
+            <textarea name="mensaje" placeholder="Mensaje" class="input"></textarea>
             <input type="submit" value="Enviar mensaje" class="btn">
-          </form>
+        </form>
         </div>
       </div>
       <div class="redes">
