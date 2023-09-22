@@ -120,6 +120,20 @@ $('.contact-form').find('.form-control').each(function() {
     $(this).addClass("active");
     
  });
- 
+ $(document).ready(function() {
+  // Selecciona el botón hamburguesa y la lista de elementos de menú.
+  var $menuHamburguesa = $('.toggler');
+  var $itemsMenuCerrar = $('.close-menu');
 
- 
+  // Agrega un evento click al botón hamburguesa.
+  $menuHamburguesa.on('click', function() {
+    // Tu código para abrir o cerrar el menú aquí.
+  });
+
+  // Agrega un evento click a los elementos de menú que deben cerrar el menú.
+  $itemsMenuCerrar.on('click', function() {
+    // Cierra el menú hamburguesa aquí, por ejemplo:
+    $menuHamburguesa.prop('checked', false);
+  });
+});
+
