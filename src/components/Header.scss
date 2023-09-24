@@ -17,49 +17,13 @@ a {
     .logo {
         color: rgba(0, 0, 0, 0.868);
         font-size: 100px;
-        animation-duration: 2s;
-    animation-timing-function: ease-in-out;
-    animation-fill-mode: both;
     }
-
     .sub-logo {
         color: rgba(0, 0, 0, 0.868);
         font-size: 50px;
-        animation-duration: 2s;
-    animation-timing-function: ease-in-out;
-    animation-fill-mode: both;
     }
-    .animate-left {
-        animation-name: slideInLeft;
-    }
-    
-    .animate-right {
-        animation-name: slideInRight;
-    }
-    
-    @keyframes slideInLeft {
-        0% {
-            transform: translateX(-100%);
-            opacity: 0;
-        }
-        100% {
-            transform: translateX(0);
-            opacity: 1;
-        }
-    }
-    
-    @keyframes slideInRight {
-        0% {
-            transform: translateX(100%);
-            opacity: 0;
-        }
-        100% {
-            transform: translateX(0);
-            opacity: 1;
-        }
-    }
-}
 
+}
 
 
 .et-hero-tabs-container {
