@@ -336,10 +336,42 @@ a {
 .mi-div .logo {
   color: rgba(0, 0, 0, 0.868);
   font-size: 100px;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: both;
 }
 .mi-div .sub-logo {
   color: rgba(0, 0, 0, 0.868);
   font-size: 50px;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: both;
+}
+.mi-div .animate-left {
+  animation-name: slideInLeft;
+}
+.mi-div .animate-right {
+  animation-name: slideInRight;
+}
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slideInRight {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 
 .et-hero-tabs-container {
@@ -390,10 +422,10 @@ a {
     padding: 10px;
   }
   .mi-div .logo {
-    font-size: 24px;
+    font-size: 50px;
   }
   .mi-div .sub-logo {
-    font-size: 14px;
+    font-size: 25px;
   }
   .et-hero-tabs-container {
     display: none;
