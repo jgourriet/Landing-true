@@ -273,7 +273,7 @@
 
 @media (max-width: 500px) {
   .redes {
-    margin-left: 22px;
+    margin-left: 25px;
   }
   .wrapper .icon {
     width: 15px;
@@ -295,18 +295,134 @@
   padding: 0;
 }
 
-.trabajos {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  position: relative;
-  background: #e9ecef;
-  text-align: center;
-  padding: 0;
+.planes {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  background-color: #171717;
 }
 
+.pricing-plans {
+  gap: 32px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  padding: 44px;
+}
+
+.pricing-card {
+  --col: #e4e4e7;
+  position: relative;
+  width: 100%;
+  padding: 26px;
+  padding-bottom: 80px;
+  border-radius: 4px;
+  border: 1px solid #262626;
+  background-color: rgba(38, 38, 38, 0.1254901961);
+  box-shadow: 0 0 32px transparent;
+  text-align: center;
+}
+
+.pricing-card.basic {
+  --col: #0891b2;
+}
+
+.pricing-card.standard {
+  --col: #059669;
+}
+
+.pricing-card.premium {
+  --col: #c026d3;
+}
+
+.pricing-card:hover {
+  border-color: var(--col);
+  background-color: rgba(38, 38, 38, 0.5019607843);
+  box-shadow: 0 0 32px #171717;
+  transform: translateY(-16px) scale(1.02);
+  transition: all 0.5s ease;
+}
+
+.pricing-card > *:not(:last-child) {
+  margin-bottom: 25px;
+}
+
+.pricing-card .heading h4 {
+  padding-bottom: 12px;
+  color: var(--col);
+  font-size: 20px;
+  font-weight: normal;
+}
+
+.pricing-card .heading p {
+  color: #a3a3a3;
+  font-size: 12px;
+  font-weight: lighter;
+}
+
+.pricing-card .price {
+  position: relative;
+  color: var(--col);
+  font-size: 45px;
+  font-weight: bold;
+}
+
+.pricing-card .price sub {
+  position: absolute;
+  bottom: 12px;
+  color: #a3a3a3;
+  font-size: 12px;
+  font-weight: lighter;
+}
+
+.pricing-card .features li {
+  padding-bottom: 16px;
+  color: #a3a3a3;
+  font-size: 14px;
+  font-weight: lighter;
+  text-align: left;
+}
+
+.pricing-card .features li i,
+.pricing-card .features li strong {
+  color: #e4e4e7;
+  font-size: 14px;
+  text-align: left;
+}
+
+.pricing-card .features li strong {
+  padding-left: 24px;
+}
+
+.pricing-card .cta-btn {
+  position: absolute;
+  bottom: 25px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 130px;
+  padding: 12px;
+  border-radius: 4px;
+  border: 1px solid var(--col);
+  background-color: var(--col);
+  color: #e4e4e7;
+  font-size: 15px;
+  font-weight: normal;
+  cursor: pointer;
+}
+
+.pricing-card .cta-btn:active {
+  background-color: transparent;
+  color: var(--col);
+  transition: all 0.3s ease;
+}
+
+@media (max-width: 800px) {
+  .planes .pricing-plans .pricing-card {
+    width: 100%;
+  }
+}
 * {
   margin: 0;
   padding: 0;
