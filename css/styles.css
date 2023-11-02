@@ -272,6 +272,9 @@
 }
 
 @media (max-width: 500px) {
+  .contact {
+    height: 120vh;
+  }
   .redes {
     margin-left: 25px;
   }
