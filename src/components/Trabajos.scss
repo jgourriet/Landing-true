@@ -21,7 +21,7 @@
   .pricing-card {
     --col: #e4e4e7;
     position: relative;
-    width: 100%;
+    width: 30%;
     padding: 26px;
     padding-bottom: 80px;
     border-radius: 4px;
@@ -128,6 +128,7 @@
         .pricing-plans{
             .pricing-card{
                 width: 100%;
+                margin-left: 20px;
             }
         }
     }
